@@ -8,6 +8,10 @@ body, html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+  display:grid;
+  grid-template-columns: 100px,100px,500px,100px;
+  gap:15px;
+  grid-template-rows: 100px,100px,500px,100px;
 }
 
 .container div {
@@ -21,18 +25,26 @@ body, html {
 
 .header {
   background-color: #FFDE22;
+  grid-column: 1/4;
+  grid-row: 1;
 }
 
 .sidebar {
   background-color: #FF7755;
+  grid-column: 1;
+  grid-row: 2/4;
 }
 
 .nav {
   background-color: #00DDFF;
+  grid-column: 2/4;
+  grid-row: 2;
 }
 
 .article {
   background-color: #bccbde;
+  grid-column: 2/4;
+  grid-row: 3;
 }
 
 .article p {
@@ -40,8 +52,11 @@ body, html {
   font-family: sans-serif;
   color: white;
   text-align: left;
+ 
 }
 
 .footer {
   background-color: #393f4d;
+  grid-column: 1/4;
+  grid-row: 4;
 }
